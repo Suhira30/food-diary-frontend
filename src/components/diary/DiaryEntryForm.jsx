@@ -28,7 +28,10 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
         const submitData = {
             ...formData,
             rating: Number(formData.rating),
+<<<<<<< HEAD
             // ✅ Backend expects LocalDateTime format, not just a date string
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             visitDate: formData.visitDate ? `${formData.visitDate}T00:00:00` : null,
         };
 
@@ -42,7 +45,10 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
     return (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
             <div className="bg-card-bg rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+<<<<<<< HEAD
                 {/* Header */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 <div className="sticky top-0 bg-card-bg border-b border-border-color p-4 flex items-center justify-between">
                     <h2 className="text-xl font-bold text-text-primary">
                         {entry ? 'Edit Diary Entry' : 'Add Diary Entry'}
@@ -54,11 +60,16 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
                         <FaTimes size={24} />
                     </button>
                 </div>
+<<<<<<< HEAD
 
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="p-6 space-y-6">
                     {/* Rating */}
                     <div>
+=======
+                <form onSubmit={handleSubmit} className="p-6 space-y-6">
+                     <div>
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                         <label className="block text-text-primary font-semibold mb-2">
                             Rating <span className="text-red-500">*</span>
                         </label>
@@ -88,7 +99,10 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
                         </div>
                     </div>
 
+<<<<<<< HEAD
                     {/* Review */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <label className="block text-text-primary font-semibold mb-2">
                             Review
@@ -101,7 +115,10 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
                         />
                     </div>
 
+<<<<<<< HEAD
                     {/* Visit Date */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <label className="block text-text-primary font-semibold mb-2">
                             Visit Date
@@ -115,7 +132,10 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
                         />
                     </div>
 
+<<<<<<< HEAD
                     {/* Checkboxes */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div className="space-y-3">
                         <label className="flex items-center space-x-2 cursor-pointer">
                             <input
@@ -148,7 +168,10 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
                         </label>
                     </div>
 
+<<<<<<< HEAD
                     {/* Tags */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <label className="block text-text-primary font-semibold mb-2">
                             Tags
@@ -162,8 +185,11 @@ const DiaryEntryForm = ({ entry, restaurantId, onSubmit, onCancel, isLoading }) 
                         />
                         <p className="text-text-secondary text-xs mt-1">Separate tags with commas</p>
                     </div>
+<<<<<<< HEAD
 
                     {/* Actions */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div className="flex items-center gap-3 pt-4">
                         <button
                             type="submit"

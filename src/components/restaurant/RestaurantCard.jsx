@@ -10,7 +10,10 @@ const RestaurantCard = ({ restaurant }) => {
             to={`/restaurant/${restaurant.id}`}
             className="card card-hover block overflow-hidden"
         >
+<<<<<<< HEAD
             {/* Restaurant Image */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             <div className="relative h-48 bg-secondary-bg overflow-hidden">
                 {restaurant.imageUrl ? (
                     <img
@@ -23,8 +26,11 @@ const RestaurantCard = ({ restaurant }) => {
                         🍽️
                     </div>
                 )}
+<<<<<<< HEAD
 
                 {/* Rating Badge */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 {restaurant.averageRating > 0 && (
                     <div className="absolute top-2 right-2 bg-card-bg/90 backdrop-blur-sm px-2 py-1 rounded-md flex items-center space-x-1">
                         <FaStar className="text-accent-orange text-sm" />
@@ -35,7 +41,10 @@ const RestaurantCard = ({ restaurant }) => {
                 )}
             </div>
 
+<<<<<<< HEAD
             {/* Restaurant Info */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             <div className="p-4">
                 <h3 className="text-text-primary font-bold text-lg mb-2 line-clamp-1">
                     {restaurant.name}

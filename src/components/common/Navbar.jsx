@@ -20,13 +20,20 @@ const Navbar = () => {
         <nav className="bg-secondary-bg border-b border-border-color sticky top-0 z-50">
             <div className="container-custom">
                 <div className="flex items-center justify-between h-16">
+<<<<<<< HEAD
                     {/* Logo */}
+=======
+            
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <Link to="/" className="flex items-center space-x-2 group">
                         <FaUtensils className="text-2xl text-accent-green group-hover:text-green-400 transition-colors" />
                         <span className="text-xl font-bold text-text-primary">Food Diary</span>
                     </Link>
 
+<<<<<<< HEAD
                     {/* Navigation Links — hidden on auth pages */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     {!isAuthPage && (
                         <div className="hidden md:flex items-center space-x-6">
                             <Link
@@ -72,7 +79,10 @@ const Navbar = () => {
                         </div>
                     )}
 
+<<<<<<< HEAD
                     {/* User Menu — hidden on auth pages */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     {!isAuthPage && <div className="flex items-center space-x-4">
                         {isAuthenticated ? (
                             <div className="relative">

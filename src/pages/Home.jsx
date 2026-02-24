@@ -20,7 +20,11 @@ const Home = () => {
         try {
             setLoading(true);
             const data = await getAllRestaurants();
+<<<<<<< HEAD
             // Show featured restaurants (top rated first)
+=======
+          
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             const featured = data
                 .sort((a, b) => (b.averageRating || 0) - (a.averageRating || 0))
                 .slice(0, 8);
@@ -34,10 +38,14 @@ const Home = () => {
 
     return (
         <div className="min-h-screen">
+<<<<<<< HEAD
             {/* Hero Section */}
             <div className="relative bg-gradient-to-br from-secondary-bg to-primary-bg border-b border-border-color overflow-hidden">
 
                 {/* Glowing orbs */}
+=======
+            <div className="relative bg-gradient-to-br from-secondary-bg to-primary-bg border-b border-border-color overflow-hidden">
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 <div className="hero-orb" style={{
                     width: '420px', height: '420px',
                     background: 'radial-gradient(circle, rgba(0,192,48,0.25) 0%, transparent 70%)',
@@ -56,8 +64,11 @@ const Home = () => {
                     top: '40%', right: '20%',
                     '--dur': '7s', '--delay': '3s'
                 }} />
+<<<<<<< HEAD
 
                 {/* Floating food emoji particles */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 {[
                     { emoji: '🍕', x: '8%', y: '15%', size: '2rem', dur: '4.2s', delay: '0s' },
                     { emoji: '🍣', x: '88%', y: '10%', size: '1.8rem', dur: '5.5s', delay: '0.8s' },
@@ -79,7 +90,10 @@ const Home = () => {
                     </div>
                 ))}
 
+<<<<<<< HEAD
                 {/* Content */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 <div className="relative z-10 container-custom py-20 text-center">
                     <h1 className="text-5xl md:text-6xl font-bold text-text-primary mb-6">
                         Track Your <span className="text-accent-green">Culinary Journey</span>
@@ -112,7 +126,10 @@ const Home = () => {
                 </div>
             </div>
 
+<<<<<<< HEAD
             {/* Featured Restaurants */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             <div className="container-custom py-16">
                 <div className="flex items-center justify-between mb-8">
                     <div>
@@ -132,8 +149,11 @@ const Home = () => {
 
                 <RestaurantGrid restaurants={restaurants} loading={loading} />
             </div>
+<<<<<<< HEAD
 
             {/* Features Section */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             <div className="bg-secondary-bg py-16 border-t border-border-color">
                 <div className="container-custom">
                     <h2 className="text-3xl font-bold text-text-primary text-center mb-12">
@@ -141,7 +161,11 @@ const Home = () => {
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<<<<<<< HEAD
                         {/* Feature 1 */}
+=======
+    
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                         <div className="card text-center group hover:-translate-y-1 transition-transform duration-300"
                             style={{ background: 'linear-gradient(135deg, rgba(0,192,48,0.08) 0%, rgba(0,192,48,0.02) 100%)', border: '1px solid rgba(0,192,48,0.2)' }}>
                             <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-3xl"
@@ -154,7 +178,11 @@ const Home = () => {
                             </p>
                         </div>
 
+<<<<<<< HEAD
                         {/* Feature 2 */}
+=======
+        
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                         <div className="card text-center group hover:-translate-y-1 transition-transform duration-300"
                             style={{ background: 'linear-gradient(135deg, rgba(255,128,0,0.08) 0%, rgba(255,200,0,0.04) 100%)', border: '1px solid rgba(255,128,0,0.2)' }}>
                             <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-3xl"
@@ -167,7 +195,11 @@ const Home = () => {
                             </p>
                         </div>
 
+<<<<<<< HEAD
                         {/* Feature 3 */}
+=======
+                    
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                         <div className="card text-center group hover:-translate-y-1 transition-transform duration-300"
                             style={{ background: 'linear-gradient(135deg, rgba(99,102,241,0.10) 0%, rgba(168,85,247,0.05) 100%)', border: '1px solid rgba(99,102,241,0.2)' }}>
                             <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-3xl"
@@ -183,7 +215,10 @@ const Home = () => {
                 </div>
             </div>
 
+<<<<<<< HEAD
             {/* Pro CTA */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             {isAuthenticated && !user?.isPro && (
                 <div className="container-custom py-16">
                     <div className="card bg-gradient-to-r from-accent-orange/10 to-accent-green/10 border-accent-green">

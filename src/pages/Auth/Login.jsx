@@ -30,7 +30,11 @@ const Login = () => {
     return (
         <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">
+<<<<<<< HEAD
                 {/* Logo & Title */}
+=======
+            
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 <div className="text-center">
                     <div className="flex items-center justify-center mb-4">
                         <FaUtensils className="text-5xl text-accent-green" />
@@ -39,7 +43,10 @@ const Login = () => {
                     <p className="mt-2 text-text-secondary">Sign in to your Food Diary account</p>
                 </div>
 
+<<<<<<< HEAD
                 {/* Login Form */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                     {error && (
                         <div className="bg-red-500/10 border border-red-500 text-red-500 px-4 py-3 rounded-md text-sm">
@@ -48,7 +55,10 @@ const Login = () => {
                     )}
 
                     <div className="space-y-4">
+<<<<<<< HEAD
                         {/* Email */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                         <div>
                             <label htmlFor="email" className="sr-only">
                                 Email address
@@ -70,8 +80,11 @@ const Login = () => {
                                 />
                             </div>
                         </div>
+<<<<<<< HEAD
 
                         {/* Password */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                         <div>
                             <label htmlFor="password" className="sr-only">
                                 Password
@@ -94,8 +107,11 @@ const Login = () => {
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
 
                     {/* Submit Button */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <button
                             type="submit"
@@ -105,8 +121,11 @@ const Login = () => {
                             {isLoading ? 'Signing in...' : 'Sign in'}
                         </button>
                     </div>
+<<<<<<< HEAD
 
                     {/* Register Link */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div className="text-center">
                         <p className="text-text-secondary">
                             Don't have an account?{' '}

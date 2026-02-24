@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+=======
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+
+// Hides footer on auth pages
+const ConditionalFooter = ({ children }) => {
+    const location = useLocation();
+    const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
+    return isAuthPage ? null : children;
+};
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
@@ -82,7 +93,11 @@ function App() {
                             <Route path="*" element={<Navigate to="/" replace />} />
                         </Routes>
                     </main>
+<<<<<<< HEAD
                     <Footer />
+=======
+                    <ConditionalFooter><Footer /></ConditionalFooter>
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                 </div>
             </Router>
         </AuthProvider>

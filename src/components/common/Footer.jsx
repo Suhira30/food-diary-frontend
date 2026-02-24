@@ -6,7 +6,11 @@ const Footer = () => {
         <footer className="bg-secondary-bg border-t border-border-color mt-auto">
             <div className="container-custom py-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<<<<<<< HEAD
                     {/* About */}
+=======
+                
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <h3 className="text-text-primary font-bold text-lg mb-3">Food Diary</h3>
                         <p className="text-text-secondary text-sm">
@@ -14,7 +18,10 @@ const Footer = () => {
                         </p>
                     </div>
 
+<<<<<<< HEAD
                     {/* Quick Links */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <h3 className="text-text-primary font-bold text-lg mb-3">Quick Links</h3>
                         <ul className="space-y-2">
@@ -36,7 +43,10 @@ const Footer = () => {
                         </ul>
                     </div>
 
+<<<<<<< HEAD
                     {/* Social */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div>
                         <h3 className="text-text-primary font-bold text-lg mb-3">Connect</h3>
                         <div className="flex space-x-4">

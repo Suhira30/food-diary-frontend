@@ -9,7 +9,10 @@ export const AuthProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
     const [token, setToken] = useState(null);
 
+<<<<<<< HEAD
     // Load user from localStorage on mount
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
     useEffect(() => {
         const storedToken = localStorage.getItem(TOKEN_KEY);
         const storedUser = localStorage.getItem(USER_KEY);

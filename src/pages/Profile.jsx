@@ -100,16 +100,28 @@ const Profile = () => {
     return (
         <div className="min-h-screen py-8">
             <div className="container-custom">
+<<<<<<< HEAD
                 {/* Profile Header */}
                 {profile && (
                     <div className="card mb-8">
                         <div className="flex items-start gap-6">
                             {/* Avatar */}
+=======
+              
+                {profile && (
+                    <div className="card mb-8">
+                        <div className="flex items-start gap-6">
+                           
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                             <div className="w-24 h-24 bg-accent-green rounded-full flex items-center justify-center text-3xl font-bold text-white flex-shrink-0">
                                 {profile.name?.charAt(0).toUpperCase()}
                             </div>
 
+<<<<<<< HEAD
                             {/* Info */}
+=======
+                            
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                             <div className="flex-1">
                                 <div className="flex items-center gap-3 mb-2">
                                     <h1 className="text-3xl font-bold text-text-primary">
@@ -125,7 +137,11 @@ const Profile = () => {
 
                                 <p className="text-text-secondary mb-4">{profile.email}</p>
 
+<<<<<<< HEAD
                                 {/* Stats */}
+=======
+                              
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                                 {profile.stats && (
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4">
                                         <div className="bg-secondary-bg rounded p-3">
@@ -158,12 +174,18 @@ const Profile = () => {
                         </div>
                     </div>
                 )}
+<<<<<<< HEAD
 
                 {/* Timeline Section */}
                 <div>
                     <h2 className="text-2xl font-bold text-text-primary mb-6">My Timeline</h2>
 
                     {/* Filter Tabs */}
+=======
+                <div>
+                    <h2 className="text-2xl font-bold text-text-primary mb-6">My Timeline</h2>
+
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     <div className="flex flex-wrap gap-2 mb-6">
                         {filterButtons.map(({ type, label, icon: Icon }) => (
                             <button
@@ -180,7 +202,10 @@ const Profile = () => {
                         ))}
                     </div>
 
+<<<<<<< HEAD
                     {/* Entries */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
                     {loading ? (
                         <LoadingSpinner text="Loading entries..." />
                     ) : error ? (
@@ -210,7 +235,10 @@ const Profile = () => {
                 </div>
             </div>
 
+<<<<<<< HEAD
             {/* Entry Form Modal */}
+=======
+>>>>>>> eac0e33edc14c6d0b6d783327c2163b68a430b21
             {showEntryForm && editingEntry && (
                 <DiaryEntryForm
                     entry={editingEntry}
